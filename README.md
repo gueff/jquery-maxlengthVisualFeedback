@@ -1,4 +1,4 @@
-# jquery-charsConsumedVisualizer
+# jquery-maxlengthVisualFeedback
 
 dynamically visualize a current input char consumption considering the related maxlength attribute value of HTML5 `<form>` input elements such as `<input>` and `<textarea>` with a Progress-Bar using jQuery.
 
