@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery maxlength visual Feedback</title>
+        <meta name="robots" content="noindex,follow">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/gueff/jquery-maxlengthVisualFeedback@2.1/maxlengthVisualFeedback.css" rel="stylesheet">   
+        <link href="https://blog.ueffing.net/post/2018/02/17/jquery-maxlength-visual-feedback/" rel="canonical">
+    </head>
+    <body>
+        <div class="container">
+        
+            <div class="row">
+                <h1 class="page-header">jQuery maxlengthVisualFeedback <small>Demo</small></h1>
+
+                <!-- Formular -->
+                <form name="Address" method="post" enctype="" action="" >
+                  <div class="form-group">
+                    <label for="Company">Company</label>
+                    <input type="text" 
+                            class="form-control maxlengthVisualFeedback" 
+                            placeholder="Company" 
+                            maxlength="10" 
+                            autofocus="1" 
+                            autocomplete="off"
+                            >
+                    <sub>Please enter Company Name.</sub><br>
+                  </div>
+                </form>
+                
+            </div>
+            
+            <p>
+                Plase note:<br>
+                - The usage of Bootstrap CSS is <i>optional</i> and <i>not necessary</i>. It just looks way nicer ;-).
+            </p>
+            <p>
+                You might want to see the Blog Post to this Demo:<br>
+                - <a href="https://blog.ueffing.net/post/2018/02/17/jquery-maxlength-visual-feedback/">
+                    <i class="fa fa-file"></i> https://blog.ueffing.net/post/2018/02/17/jquery-maxlength-visual-feedback/
+                </a>
+                <hr>
+                <a class="btn btn-success" href="https://github.com/gueff/jquery-maxlengthVisualFeedback/archive/master.zip">
+                    <i class="fa fa-archive"></i> Download latest ZIP  
+                </a>
+                <a class="btn btn-info" href="https://github.com/gueff/jquery-maxlengthVisualFeedback">
+                    <i class="fa fa-github"></i> View Project on github
+                </a>
+                <a class="btn btn-info" href="https://jsfiddle.net/f0fbj486/30/">
+                    <i class="fa fa-jsfiddle"></i> To jsfiddle Demo
+                </a>            
+            </p>            
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/gh/gueff/jquery-maxlengthVisualFeedback@2.2/maxlengthVisualFeedback.js"></script>
+        <script>
+        $(document).ready(function () {
+
+            // start Listener
+            $(".maxlengthVisualFeedback").on('click keyup keypress', function() {
+              maxlengthVisualFeedback($(this));
+            });                 
+        });    
+        </script>
+    </body>
+</html>
