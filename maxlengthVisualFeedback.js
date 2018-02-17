@@ -5,7 +5,7 @@
  * @param {integer} iSectionB
  * @param {integer} iSectionC
  */ 
-function visualizeConsumption(oObject, iSectionA, iSectionB, iSectionC) {
+function maxlengthVisualFeedback(oObject, iSectionA, iSectionB, iSectionC) {
     
     var iSectionA = ('undefined' === typeof iSectionA) ? 50 : iSectionA;
     var iSectionB = ('undefined' === typeof iSectionB) ? 70 : iSectionB;
