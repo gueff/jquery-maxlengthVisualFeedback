@@ -14,4 +14,4 @@ The section colors you style by CSS. The section sizes you define by JS (see Mod
 
 ---
 
-For Documentation and Examples, please see my Article [dynamic visualization of consumption of chars in input elements with jQuery in relation to the value of a maxlength attribute](https://blog.ueffing.net/post/2016/03/14/dynamic-visualization-of-consumption-of-chars-in-input-elements-with-jquery-in-relation-to-the-value-of-a-maxlength-attribute/) on https://blog.ueffing.net
+For Documentation and Examples, please see my Article: [jQuery maxlength visual Feedback](https://blog.ueffing.net/post/2018/02/17/jquery-maxlength-visual-feedback/) on https://blog.ueffing.net
