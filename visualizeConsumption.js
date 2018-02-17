@@ -1,11 +1,10 @@
-
 /**
  * @param {object} oObject
  * @param {integer} iSectionA
  * @param {integer} iSectionB
  * @param {integer} iSectionC
  */ 
-function visualizeConsumption(oObject, iSectionA, iSectionB, iSectionC) {
+function charsConsumedVisualizer(oObject, iSectionA, iSectionB, iSectionC) {
     
     var iSectionA = ('undefined' === typeof iSectionA) ? 50 : iSectionA;
     var iSectionB = ('undefined' === typeof iSectionB) ? 70 : iSectionB;
@@ -16,15 +15,15 @@ function visualizeConsumption(oObject, iSectionA, iSectionB, iSectionC) {
     }
     
     $(oObject).on('blur', function() {
-        $('.visualizeConsumptionBar').hide()
+        $('.charsConsumedVisualizerBar').hide()
     });
     
     var iProgressBarId = oObject.next().attr('data-consumptionBar');
     
     if ('undefined' === typeof iProgressBarId) {
         var iTimestamp = Date.now();
-        $('<div id="' + iTimestamp + '" data-consumptionBar="' + iTimestamp + '" class="visualizeConsumptionBar progress progress-striped active"><div class="progress-bar"><div class="progresstext"></div></div></div>').insertAfter(oObject);
-        $('.visualizeConsumptionBar').hide();
+        $('<div id="' + iTimestamp + '" data-consumptionBar="' + iTimestamp + '" class="charsConsumedVisualizerBar progress progress-striped active"><div class="progress-bar"><div class="progresstext"></div></div></div>').insertAfter(oObject);
+        $('.charsConsumedVisualizerBar').hide();
         $(oObject).focus();
         return false
     }
